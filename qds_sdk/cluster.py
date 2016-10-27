@@ -749,7 +749,7 @@ class ClusterInfo():
                             custom_ec2_tags=None,
                             use_hadoop2=None,
                             use_spark=None,
-			    is_ha=None):
+			     is_ha=None):
         """
         Kwargs:
 
@@ -784,7 +784,7 @@ class ClusterInfo():
         self.hadoop_settings['use_hbase'] = use_hbase
         self.hadoop_settings['use_hadoop2'] = use_hadoop2
         self.hadoop_settings['use_spark'] = use_spark
-	self.hadoop_settings['is_ha'] = is_ha
+	 self.hadoop_settings['is_ha'] = is_ha
 
         if custom_ec2_tags and custom_ec2_tags.strip():
             try:
@@ -949,7 +949,7 @@ class ClusterInfoV13():
                          bastion_node_public_dns=None,
                          role_instance_profile=None,
                          presto_custom_config=None,
-			 is_ha=None):
+			  is_ha=None):
         """
         Kwargs:
 
@@ -1055,7 +1055,7 @@ class ClusterInfoV13():
 
         `bastion_node_public_dns`: Public dns name of the bastion node. Required only if cluster is in private subnet.
 
-	`is_ha`: Enabling HA config for cluster
+	 `is_ha`: Enabling HA config for cluster
 
         """
 
